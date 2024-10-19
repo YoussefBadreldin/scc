@@ -7,7 +7,7 @@
       <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="../../images/slider/slider-1.jpg" class="d-block w-100" alt="Slider Image 1">
+            <img src="../../images/slider/slider-1.jpg" class="d-block w-100 slider-img" alt="Slider Image 1">
             <div class="carousel-caption d-none d-md-block">
               <!-- Optional Caption Here -->
             </div>
@@ -102,6 +102,11 @@ export default {
   padding-top: 0;
 }
 
+.slider .carousel-item img {
+  height: 75vh; /* Set slider height to the original size */
+  object-fit: cover;
+}
+
 /* Section Styles */
 .about-section, .mission-section, .vision-section, .founder-section, .supervisor-section, .board-section {
   padding: 40px 0;
@@ -124,6 +129,10 @@ p {
 @media (max-width: 768px) {
   .about-section, .mission-section, .vision-section, .founder-section, .supervisor-section, .board-section {
     padding: 20px 0;
+  }
+
+  .slider .carousel-item img {
+    height: 40vh; /* Reduce slider height on mobile for better display */
   }
 }
 </style>
