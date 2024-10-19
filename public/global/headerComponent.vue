@@ -47,7 +47,7 @@
     </head>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
-      <div class="container"> <!-- Add container to center content -->
+      <div class="container">
         <a class="navbar-brand" href="/Home">
           <img src="../../images/logo.png" alt="Scc Logo" class="d-inline-block align-top logo-large" />
         </a>
@@ -123,25 +123,13 @@ export default {
     max-width: 200px; /* Increased logo width */
   }
 
-  .header-top {
-    background-color: #C70039;
-    padding: 5px 0;
-    color: white;
-    text-align: center;
-  }
-
-  .header-top ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
   .container {
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
+  /* Add this to change navbar items to be stacked in mobile view */
   .navbar-nav {
     flex-direction: row;
   }
@@ -149,5 +137,17 @@ export default {
   .navbar-nav .nav-item {
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  /* Mobile-specific styles for vertical alignment of menu */
+  @media (max-width: 992px) {
+    .navbar-nav {
+      flex-direction: column; /* Stack items vertically on small screens */
+      align-items: center; /* Center align menu items */
+    }
+
+    .navbar-nav .nav-item {
+      margin-bottom: 10px; /* Add space between items */
+    }
   }
 </style>
