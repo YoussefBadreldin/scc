@@ -2,15 +2,15 @@
   <div class="copy" style="text-align: center;">
     <div class="CopyRights">
 <div class="social-icons" style="display: inline-flex; align-items: center; margin-left: 5px;"> <!-- Align icons on the same line -->
-    <a href="mailto:studentunion@aiu.edu.eg" style="margin: 0 10px; display: flex; align-items: center;">
+    <a href="mailto:scc.ksiu@gmail.com" style="margin: 0 10px; display: flex; align-items: center;">
         <i class="fas fa-envelope" aria-hidden="true"></i> <!-- Email icon -->
-        <span style="margin-left: 5px;">studentunion@aiu.edu.eg</span> <!-- Email text -->
+        <span style="margin-left: 5px;">scc.ksiu@gmail.com</span> <!-- Email text -->
     </a>
-    <a href="https://www.facebook.com/AIUSU.Official" target="_blank" style="margin: 0 10px; display: flex; align-items: center;" aria-label="Facebook">
+    <a href="https://www.facebook.com/scc.ksiu" target="_blank" style="margin: 0 10px; display: flex; align-items: center;" aria-label="Facebook">
         <i class="fab fa-facebook-f" aria-hidden="true"></i>
         <span style="margin-left: 5px;">Facebook</span> <!-- Add Facebook text -->
     </a>
-    <a href="https://www.instagram.com/aiustudentunion" target="_blank" style="margin: 0 10px; display: flex; align-items: center;" aria-label="Instagram">
+    <a href="https://www.instagram.com/scc_ksiu" target="_blank" style="margin: 0 10px; display: flex; align-items: center;" aria-label="Instagram">
         <i class="fab fa-instagram" aria-hidden="true"></i>
         <span style="margin-left: 5px;">Instagram</span> <!-- Add Instagram text -->
     </a>

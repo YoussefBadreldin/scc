@@ -1,53 +1,71 @@
 <template>
-    <div>
-        <HeaderComponent />
+  <div>
+    <HeaderComponent />
 
-        <!-- Slider -->
-        <div class="slider">
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="../../images/slider/slider-1.jpg" class="d-block w-100" alt="Slider Image 1">
-                        <div class="carousel-caption d-none d-md-block">
-                            <!-- Optional Caption Here -->
-                        </div>
-                    </div>
-                </div>
+    <!-- Slider -->
+    <div class="slider">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../../images/slider/slider-1.jpg" class="d-block w-100" alt="Slider Image 1">
+            <div class="carousel-caption d-none d-md-block">
+              <!-- Optional Caption Here -->
             </div>
+          </div>
         </div>
-
-        <div class="About-Us" dir="rtl">
-            <div class="inner-lay">
-                <div class="container">
-                    <div class="row session-title">
-                        <h2>الخدمات</h2>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-6 col-md-4 mb-3">
-                            <button class="custom-btn btn-lg btn-block" @click="navigateToPage('/about')">معلومات عن الإتحاد</button>
-                        </div>
-                        <div class="col-lg-6 col-md-4 mb-3">
-                            <button class="custom-btn btn-lg btn-block" @click="navigateToPage('/rules')">لائحة الاتحاد</button>
-                        </div>
-                        <div class="col-lg-6 col-md-4 mb-3">
-                            <button class="custom-btn btn-lg btn-block" @click="navigateToPage('/members')">اعضاء الاتحاد</button>
-                        </div>
-                        <div class="col-lg-6 col-md-4 mb-3">
-                            <button class="custom-btn btn-lg btn-block" @click="redirectToLink">الاشتراك في انشطة الاتحاد</button>
-                        </div>
-                        <div class="col-lg-6 col-md-4 mb-3">
-                            <button class="custom-btn btn-lg btn-block" @click="navigateToPage('/join')">الانضمام الي الاتحاد</button>
-                        </div>
-                        <div class="col-lg-6 col-md-4 mb-3">
-                            <button class="custom-btn btn-lg btn-block" @click="navigateToPage('/elections')">معرفة لجنتك الانتخابية</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <FooterComponent />
+      </div>
     </div>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <h2 class="text-center">About</h2>
+        <p class="text-center">Information about the Student Climate Community (SCC).</p>
+      </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section id="mission" class="mission-section">
+      <div class="container">
+        <h2 class="text-center">Mission</h2>
+        <p class="text-center">Our mission is to advocate for climate awareness and environmental sustainability.</p>
+      </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section id="vision" class="vision-section">
+      <div class="container">
+        <h2 class="text-center">Vision</h2>
+        <p class="text-center">Our vision is to create a sustainable world through active student involvement.</p>
+      </div>
+    </section>
+
+    <!-- Founder Section -->
+    <section id="founder" class="founder-section">
+      <div class="container">
+        <h2 class="text-center">Founder</h2>
+        <p class="text-center">Details about the founder and their contributions to the SCC.</p>
+      </div>
+    </section>
+
+    <!-- Supervisor Section -->
+    <section id="supervisor" class="supervisor-section">
+      <div class="container">
+        <h2 class="text-center">Supervisor</h2>
+        <p class="text-center">Information about the project supervisor and their background.</p>
+      </div>
+    </section>
+
+    <!-- Board Section -->
+    <section id="board" class="board-section">
+      <div class="container">
+        <h2 class="text-center">Board</h2>
+        <p class="text-center">Meet the board members and their roles in the Student Climate Community.</p>
+      </div>
+    </section>
+
+    <FooterComponent />
+  </div>
 </template>
 
 <script>
@@ -56,72 +74,56 @@ import HeaderComponent from '../../public/global/headerComponent.vue';
 import FooterComponent from '../../public/global/footerComponent.vue';
 
 export default {
-    name: 'MainComponent',
-    components: {
-        HeaderComponent,
-        FooterComponent,
-    },
-    setup() {
-        const router = useRouter(); // Initialize router
+  name: 'MainComponent',
+  components: {
+    HeaderComponent,
+    FooterComponent,
+  },
+  setup() {
+    const router = useRouter(); // Initialize router
 
-        const navigateToPage = (path) => {
-            router.push(path); // Use router to navigate
-        };
+    const navigateToPage = (path) => {
+      router.push(path); // Use router to navigate
+    };
 
-        const redirectToLink = () => {
-            window.location.href = 'https://linktr.ee/aiustudentunion';
-        };
-
-        return {
-            navigateToPage,
-            redirectToLink, // Ensure redirectToLink is returned
-        };
-    },
-    mounted() {
-        window.scrollTo(0, 0); // Scroll to top on mount
-    },
+    return {
+      navigateToPage,
+    };
+  },
+  mounted() {
+    window.scrollTo(0, 0); // Scroll to top on mount
+  },
 };
 </script>
 
 <style scoped>
 /* Slider Styles */
 .slider {
-    padding-top: 0;
+  padding-top: 0;
 }
 
-/* About Us Styles */
-.About-Us .inner-lay {
-    padding: 20px;
+/* Section Styles */
+.about-section, .mission-section, .vision-section, .founder-section, .supervisor-section, .board-section {
+  padding: 40px 0;
+  background-color: #f8f9fa;
 }
 
-.About-Us .session-title {
-    text-align: center;
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #c42326;
 }
 
-/* Custom Button Styles */
-.custom-btn {
-    background-color: #c42326 !important; /* Button color */
-    color: white !important; /* Text color */
-    border: none; /* Remove border */
-    transition: background-color 0.3s; /* Smooth transition */
-}
-
-.custom-btn:hover {
-    background-color: #b11d22 !important; /* Darker shade on hover */
-}
-
-/* Spacing for Mobile */
-@media (max-width: 768px) {
-    .About-Us .row > div {
-        margin-bottom: 15px; /* Adjust spacing for mobile devices */
-    }
+p {
+  font-size: 1.2rem;
+  color: #333;
+  text-align: center;
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    .carousel-item img {
-        height: 40vh; /* Set height as a percentage of the viewport height */
-        object-fit: cover; /* Ensure image covers the area without distortion */
-    }
+  .about-section, .mission-section, .vision-section, .founder-section, .supervisor-section, .board-section {
+    padding: 20px 0;
+  }
 }
 </style>
