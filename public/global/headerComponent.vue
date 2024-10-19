@@ -33,10 +33,16 @@
 
       <!-- CSS Preloading for Critical CSS -->
       <link rel="preload" href="/css/bootstrap.min.css" as="style">
+      <link rel="preload" href="/css/fontawsom-all.min.css" as="style">
+      <link rel="preload" href="/plugins/slider/css/owl.carousel.min.css" as="style">
+      <link rel="preload" href="/plugins/slider/css/owl.theme.default.css" as="style">
       <link rel="preload" href="/css/style.css" as="style">
 
       <!-- Stylesheets -->
       <link rel="stylesheet" href="/css/bootstrap.min.css">
+      <link rel="stylesheet" href="/css/fontawsom-all.min.css">
+      <link rel="stylesheet" href="/plugins/slider/css/owl.carousel.min.css">
+      <link rel="stylesheet" href="/plugins/slider/css/owl.theme.default.css">
       <link rel="stylesheet" href="/css/style.css">
     </head>
 
