@@ -67,7 +67,7 @@
               <a class="nav-link" href="/Clubs">Clubs</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/Register">Registration</a>
+              <a class="nav-link" href="/Registration">Registration</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/Articles">Articles</a>
